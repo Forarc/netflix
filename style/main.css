@@ -1,0 +1,99 @@
+:root {
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /* Por padrão é row*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*serie principal*/
+.serie-principal {
+    font-size: 16px;
+    background: linear-gradient(to right,#181818 0,rgba(23,23,23,.987) 2.62%,rgba(23,23,23,.951) 6.1%,rgba(23,23,23,.896) 8.5%,rgba(23,23,23,.825) 10.8%,rgba(23,23,23,.741) 14.06%,rgba(23,23,23,.648) 16.24%,rgba(23,23,23,.55) 18.42%,rgba(23,23,23,.45) 20.58%,rgba(23,23,23,.352) 22.76%,rgba(23,23,23,.259) 24.94%,rgba(23,23,23,.175) 28.2%,rgba(23,23,23,.104) 30.5%,rgba(23,23,23,.049) 32.9%,rgba(23,23,23,.013) 36.38%,rgba(23,23,23,0) 40%), url("/img/background.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.serie-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 7px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.serie-principal .container {
+    width: 60%;
+}
+
+.box-serie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-series {
+    margin-top: 1px;
+}
